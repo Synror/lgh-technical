@@ -18,9 +18,4 @@ class OnRentLines extends Model
         'dispatch_id',
         'order_value',
     ];
-
-    public function onRent(): BelongsTo
-    {
-        return $this->belongsTo(OnRent::class);
-    }
 }

@@ -13,8 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('/rentals', [\App\Http\Controllers\RentalChartController::class, 'handle']);
+Route::get('/', [\App\Http\Controllers\RentalChartController::class, 'handle']);
